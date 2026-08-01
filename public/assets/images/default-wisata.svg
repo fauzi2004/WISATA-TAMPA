@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-label="Gambar wisata belum tersedia">
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#d9f99d"/>
+      <stop offset="0.55" stop-color="#86efac"/>
+      <stop offset="1" stop-color="#22c55e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#sky)"/>
+  <circle cx="935" cy="150" r="72" fill="#fef08a"/>
+  <path d="M0 600 260 300l180 210 150-160 260 250Z" fill="#166534"/>
+  <path d="M300 600 560 250l210 260 150-140 280 230Z" fill="#15803d"/>
+  <path d="M0 640c130-60 240-70 360-25s250 45 390 0 270-45 450 25v160H0Z" fill="#052e16" opacity=".8"/>
+  <text x="600" y="715" text-anchor="middle" font-family="Arial, sans-serif" font-size="44" font-weight="700" fill="#ffffff">Wisata Tampa</text>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 0 1000 700" role="img" aria-label="Ilustrasi Desa Tampa">
+  <rect width="1000" height="700" fill="#ecfccb"/>
+  <path d="M0 500 190 280l150 160 140-180 210 240Z" fill="#166534"/>
+  <path d="M360 520 600 220l180 230 110-130 110 200Z" fill="#15803d"/>
+  <rect x="90" y="455" width="210" height="140" rx="8" fill="#fef3c7"/>
+  <path d="M70 465 195 365l125 100Z" fill="#b45309"/>
+  <rect x="170" y="520" width="50" height="75" fill="#92400e"/>
+  <path d="M0 585c120-35 225-35 330 0s220 35 335 0 220-35 335 0v115H0Z" fill="#14532d"/>
+  <text x="500" y="655" text-anchor="middle" font-family="Arial, sans-serif" font-size="40" font-weight="700" fill="#ffffff">Desa Tampa</text>
+</svg>

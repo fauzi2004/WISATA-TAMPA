@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Flowgraph Login</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            background-color: #f4f4f9;
+            font-family: sans-serif;
+            padding: 40px;
+        }
+        .container {
+            display: flex;
+            gap: 40px;
+        }
+        .graph-box {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        h2 { color: #333; font-size: 18px; margin-bottom: 20px; }
+        /* Memperkecil teks di dalam SVG agar rapi */
+        svg { max-height: 80vh; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- GRAPH 1 (6 NODE) -->
+        <div class="graph-box">
+            <h2>1. Flowgraph View Login (6 Node)</h2>
+            <p style="font-size: 12px; color: gray; margin-top:-15px;">Persis seperti gambar di buku Anda</p>
+            <div class="mermaid">
+                flowchart TD
+                    classDef circle fill:#fff,stroke:#000,stroke-width:2px;
+                    classDef diamond fill:#fff,stroke:#000,stroke-width:2px;
+                    
+                    N1((1)):::circle --> N2((2)):::circle
+                    N2 --> N3{"3<br>Ada Error?"}:::diamond
+                    
+                    N3 -- Ya --> N4((4)):::circle
+                    N3 -- Tidak --> N5((5)):::circle
+                    
+                    N4 --> N6((6)):::circle
+                    N5 --> N6((6)):::circle
+            </div>
+        </div>
+
+        <!-- GRAPH 2 (13 NODE) -->
+        <div class="graph-box">
+            <h2>2. Flowgraph Validasi (13 Node)</h2>
+            <p style="font-size: 12px; color: gray; margin-top:-15px;">Versi whitebox testing backend</p>
+            <div class="mermaid">
+                flowchart TD
+                    classDef circle fill:#fff,stroke:#000,stroke-width:2px;
+                    classDef diamond fill:#fff,stroke:#000,stroke-width:2px;
+
+                    N1((1)):::circle --> N2{"2<br>Validasi<br>Gagal?"}:::diamond
+                    N2 -- Ya --> N3((3)):::circle
+                    N3 --> N13((13)):::circle
+                    
+                    N2 -- Tidak --> N4((4)):::circle
+                    N4 --> N5{"5<br>User & Pass<br>Benar?"}:::diamond
+                    
+                    N5 -- Tidak --> N12((12)):::circle
+                    N12 --> N13
+                    
+                    N5 -- Ya --> N6((6)):::circle
+                    N6 --> N7{"7<br>Ada Url<br>Redirect?"}:::diamond
+                    
+                    N7 -- Ya --> N8((8)):::circle
+                    N8 --> N13
+                    
+                    N7 -- Tidak --> N9{"9<br>Role Admin?"}:::diamond
+                    
+                    N9 -- Ya --> N10((10)):::circle
+                    N10 --> N13
+                    
+                    N9 -- Tidak --> N11((11)):::circle
+                    N11 --> N13
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Konfigurasi agar graph lebih padat dan tidak terlalu memanjang ke bawah
+        mermaid.initialize({ 
+            startOnLoad: true,
+            flowchart: {
+                useMaxWidth: false,
+                nodeSpacing: 30,
+                rankSpacing: 40
+            }
+        });
+    </script>
+</body>
+</html>

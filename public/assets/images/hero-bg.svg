@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-label="Panorama wisata alam Desa Tampa">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#bbf7d0"/>
+      <stop offset="0.45" stop-color="#4ade80"/>
+      <stop offset="1" stop-color="#14532d"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="1280" cy="150" r="90" fill="#fde68a"/>
+  <path d="M0 650 310 300l260 300 220-250 280 300Z" fill="#166534"/>
+  <path d="M510 660 850 250l280 330 180-190 290 270Z" fill="#15803d"/>
+  <path d="M0 720c180-80 330-92 520-38 220 62 360 62 570 0 180-54 330-42 510 38v180H0Z" fill="#052e16" opacity=".82"/>
+</svg>
